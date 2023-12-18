@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../img/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --firstColor: #313131;
+    --secondColor: #e5954d;
+}
+
+.orangeColor{
+    color: var(--secondColor);
+}
+
+.navbar{
+    background-color: #313131;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    opacity: 1;
+    padding: 14px 16px;
+}
+
+.companyName{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+
+.companyName i {
+    margin-right: 0.2rem;
+    margin-left: 1rem;
+}
+
+.navbar-right a{
+}
+
+.container-content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container-content a{
+    color: white;
+    padding: 1rem;
+    background-color: #e5954d;
+    border-radius: 6px;
+}
+
+.container-content h1{
+    font-size: 4rem;
+}
+
+.container-content p{
+    font-size: 1.5rem;
+    padding: 14px 16px;
+}
+
+
