@@ -7,10 +7,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+body{
+    overflow-x: hidden;
+}
+
+.bold{
+    font-weight:600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.big-thin{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.thin{
+    font-weight: lighter;
+}
+.container {
     background-image: url(../img/background-image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 :root {
@@ -99,7 +119,88 @@ body {
     height: 100vh;
     background-color: black;
     position: absolute;
-    left: 0;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.6;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 100vw;
+}
+
+.box i{
+    font-size: 30px;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    width: 60px;
+    height: 45px;
+    padding: 8px 2px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: antiquewhite;
+    height: 400px;
+    padding: 10px;
+}
+
+.box1{
+    width: 33vw;
+}
+
+.box2{
+    width: 33vw;
+}
+
+.box3{
+    width: 33vw;
+}
+
+
+.third-page{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.photo{
+    width: 50vw;
+    height: 50vh;
+    background: url(../img/what-is-Software-Engineering.jpg) no-repeat center center/cover;
+}
+
+.photo img{
+    text-align: center;
+}
+
+.content{
+    background-color: orange;
+    width: 50vw;
+    height: 50vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content a{
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 1rem;
+    width: 8rem;
+    color: white;
 }
