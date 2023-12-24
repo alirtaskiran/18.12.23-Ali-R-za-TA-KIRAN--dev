@@ -204,3 +204,8 @@ body{
     width: 8rem;
     color: white;
 }
+
+.content a:hover {
+    background-color: white;
+    color: orange;
+}
