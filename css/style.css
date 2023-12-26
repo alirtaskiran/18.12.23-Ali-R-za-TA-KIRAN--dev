@@ -8,13 +8,23 @@
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    width: 100vw;
 }
 
-.bold{
-    font-weight:600;
+.bold-high{
+    font-weight:700;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+.bold-medium{
+    font-weight: 600;
+}
+
+.big{
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .big-thin{
@@ -29,13 +39,16 @@ body{
     background-image: url(../img/background-image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     width: 100vw;
     height: 100vh;
 }
 
 :root {
     --firstColor: #313131;
-    --secondColor: #e5954d;
+    --secondColor: #ee7326;
+    /* --firstColor: #313131;
+    --secondColor: #e5954d; */
 }
 
 .orangeColor {
@@ -43,7 +56,7 @@ body{
 }
 
 .navbar {
-    background-color: rgba(81, 94, 109, 0.747);
+    background-color: rgba(81, 94, 109, 0.44);
     width: 100vw;
     height: 8vh;
     display: flex;
@@ -55,19 +68,17 @@ body{
 
 .navbar a {
     color: rgba(255, 255, 255, 1);
-    padding: 14px 16px;
-    margin: 1rem;
-    font-weight: bold;
+    padding: 10px 16px;
+    margin: 0.5rem;
 }
 
 .navbar-right a:hover{
     border-bottom: #e5954d 3px solid;
 }
-/* 
-.navbar-right a:active{
-    border-bottom: #e5954d 3px solid;
-} */
 
+.navbar-right{
+    margin-right: 1.2rem;
+}
 .companyName {
     display: flex;
     flex-direction: row;
@@ -97,7 +108,7 @@ body{
 .container-content a {
     color: white;
     padding: 1rem;
-    background-color: #e5954d;
+    background-color: var(--secondColor);
     border-radius: 6px;
     font-weight: bold;
     width: 150px;
@@ -120,7 +131,7 @@ body{
     background-color: black;
     position: absolute;
     top: 0;
-    opacity: 0.6;
+    opacity: 0.44;
 }
 
 .boxes{
@@ -129,15 +140,15 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
-    height: 50vh;
+    justify-content: center;
+    height: 35vh;
     width: 100vw;
 }
 
 .box i{
     font-size: 30px;
-    border: 1px solid orange;
-    background-color: orange;
+    border: 1px solid var(--secondColor);
+    background-color: var(--secondColor);
     border-radius: 50%;
     color: white;
     width: 60px;
@@ -150,22 +161,19 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    background-color: antiquewhite;
-    height: 400px;
-    padding: 10px;
+    gap: 1.2rem;
 }
 
 .box1{
-    width: 33vw;
+    width: 20vw;
 }
 
 .box2{
-    width: 33vw;
+    width: 20vw;
 }
 
 .box3{
-    width: 33vw;
+    width: 20vw;
 }
 
 
@@ -177,7 +185,7 @@ body{
 
 .photo{
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
     background: url(../img/what-is-Software-Engineering.jpg) no-repeat center center/cover;
 }
 
@@ -186,26 +194,125 @@ body{
 }
 
 .content{
-    background-color: orange;
+    background-color: var(--secondColor);
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: white;
-    gap: 5px;
+    gap: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
 
 .content a{
     border: 2px solid white;
-    padding: 10px;
+    border-radius: 3px;
+    padding: 12px ;
     margin-top: 1rem;
-    width: 8rem;
+    width: 10.5rem;
     color: white;
+    text-align: center;
 }
 
 .content a:hover {
     background-color: white;
     color: orange;
+}
+
+.third-content{
+    letter-spacing: 1.5px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+
+
+
+
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: -10px;
+    margin-bottom: 1rem;
+}
+
+.image{
+    height: 35vh;
+    width: 24.5vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image img{
+    height: 35vh;
+    width: 24vw;
+    object-fit: cover; /* imglere ulaşıp! coverlattık. */
+}
+
+.content-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 0.4rem;
+}
+
+.forth-page{
+    width: 100vw;
+}
+
+.forth-header{
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+.forth-main-content{
+    font-weight: 300;
+}
+
+.fifth-page{
+    display: flex;
+    width: 100vw;
+}
+
+.fifth-left{
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(245, 255, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    color: white;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.fifth-left a{
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 12px ;
+    margin-top: 1rem;
+    width: 10.5rem;
+    color: white;
+    text-align: center;
+}
+
+.fifth-right{
+    width: 50vw;
+    height: 60vh;
+    background: url('../img/right-side.jpeg') no-repeat center/cover;
 }
