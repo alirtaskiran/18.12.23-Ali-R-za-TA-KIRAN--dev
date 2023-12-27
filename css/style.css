@@ -73,7 +73,7 @@ body{
 }
 
 .navbar-right a:hover{
-    border-bottom: #e5954d 3px solid;
+    border-bottom: #e5954d 2px solid;
 }
 
 .navbar-right{
@@ -141,7 +141,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 35vh;
+    height: 45vh;
     width: 100vw;
 }
 
@@ -251,6 +251,7 @@ body{
     width: 24.5vw;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 0.5rem;
 }
 
 .image img{
@@ -289,7 +290,7 @@ body{
 .fifth-left{
     width: 50vw;
     height: 60vh;
-    background-color: rgb(245, 255, 47);
+    background-color: #dadc39;
     display: flex;
     flex-direction: column;
     justify-content: center;
